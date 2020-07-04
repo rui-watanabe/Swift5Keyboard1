@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var logoImageVIew: UIImageView!
@@ -24,10 +24,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        userNameTextField.delegate = self
+        passWordTextField.delegate = self
     }
     
     @IBAction func login(_ sender: Any) {
+        
+        logoImageVIew.image = UIImage(named: "loginOK")
+        
+        
         userNameLabel.text = userNameTextField.text
         
         passWordLabel.text = passWordTextField.text
