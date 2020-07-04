@@ -54,6 +54,20 @@
                                                 <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOr-qm-rwE"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0w-Kv-mvm">
+                                            <rect key="frame" x="50" y="624" width="315" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdd-Nx-HyX">
+                                            <rect key="frame" x="50" y="707" width="315" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <blurEffect style="regular"/>
@@ -64,7 +78,9 @@
                     </view>
                     <connections>
                         <outlet property="logoImageVIew" destination="cno-Zf-JBk" id="Nra-g7-NDa"/>
+                        <outlet property="passWordLabel" destination="Mdd-Nx-HyX" id="uHU-Lz-mlx"/>
                         <outlet property="passWordTextField" destination="EaU-4Z-byn" id="Udz-vC-uiO"/>
+                        <outlet property="userNameLabel" destination="V0w-Kv-mvm" id="Pvp-M1-eqf"/>
                         <outlet property="userNameTextField" destination="2qL-Zj-wd5" id="W2V-aU-g1T"/>
                     </connections>
                 </viewController>
